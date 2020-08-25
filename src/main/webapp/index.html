@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+    <h1>My First Bootstrap Page</h1>
+    <p>This is some text.</p>
+</div>
+
+<div class="center">
+    <form action="/items" method="=post">
+        <input type="hidden" name="user_id">
+        Name: <input type="text" name="name"><br/>
+        Password: <input type="password" name="password"><br/>
+        Sex:
+        <input type="radio" name="sex"> Male
+        <input type="radio" name="sex"> Female<br/>
+        Address:
+        <select name="address">
+            <option value="none">none</option>
+            <option value="msk">Moscow</option>
+            <option value="spb">SPB</option>
+        </select><br/>
+        Resume: <input type="file" name="resume"><br/>
+        Description: <br/><textarea name="description"></textarea>><br/>
+        Agreements: <input type="checkbox" name="agreements"><br/>
+        <input type="submit" value="Submit"><br/>
+    </form>
+</div>
+
+<div class="container">
+    <h2>Bordered Table</h2>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+        </tr>
+        <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+        </tr>
+        <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
