@@ -19,6 +19,12 @@
             }
             return true;
         }
+        function addRow() {
+            var name = $('#usr').val();
+            //получаем ссылку на последний элемент в таблице.
+            //и после него добавляем html
+            $('#table tr:last').after('<tr><td>' + name +'</td></tr>');
+        }
     </script>
 </head>
 <body>
@@ -43,7 +49,8 @@
 
 <div class="container">
     <h2>Bordered Table</h2>
-    <table class="table table-bordered">
+    <table class="table table-bordered" id="table">
+        <button type="button" class="btn btn-default" onclick="return addRow();">Add row</button>
         <thead>
         <tr>
             <th>Firstname</th>
