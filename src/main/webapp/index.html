@@ -19,15 +19,31 @@
             }
             return true;
         }
+
         function addRow() {
             var name = $('#usr').val();
             //получаем ссылку на последний элемент в таблице.
             //и после него добавляем html
-            $('#table tr:last').after('<tr><td>' + name +'</td></tr>');
+            $('#table tr:last').after('<tr><td>' + name + '</td></tr>');
         }
     </script>
 </head>
 <body>
+<div class="container">
+    <div class="row">
+        <ul class="nav">
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="/items/greet">Приветствие</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="/items/open?openLink=ajax.html">New Pointer</a>-->
+<!--            </li>-->
+            <li class="nav-item">
+                <a class="nav-link" href="/items/ajax.html">Приветствие</a>
+            </li>
+        </ul>
+    </div>
+</div>
 
 <div class="container-fluid">
     <h1>My First Bootstrap Page</h1>
